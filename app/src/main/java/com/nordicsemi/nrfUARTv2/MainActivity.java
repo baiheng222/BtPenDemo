@@ -502,7 +502,7 @@ public class MainActivity extends Activity implements RadioGroup.OnCheckedChange
 
         byte start = data[0];
         int id = data[1] > 0 ? data[1]: (data[1] + 256);
-        LogUtil.i("start is " + start + " , id is " + id);
+        LogUtil.i("start is " + start + " , id is " + Integer.toHexString(id));
         if (start == 0x2 && id == 0xa1)
         {
             LogUtil.i("get respond from server, respond for set time");
